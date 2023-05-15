@@ -1,8 +1,8 @@
-import Axios from 'axios';
+import axios from 'axios';
 
 import { URI } from './api';
 
-Axios.defaults.withCredentials = true; //to be able to read session
+axios.defaults.withCredentials = true; //to be able to read session
 
 const logIn = async (user) => {
   return await URI.post('auth/login', user);
