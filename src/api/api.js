@@ -6,7 +6,7 @@ axios.defaults.withCredentials = true; //to be able to read session
 
 const URI = axios.create({
   withCredentials: true,
-  baseURL: '/api/',
+  baseURL: 'https://ecommerce-backend-production-2b45.up.railway.app/api/',
 });
 
 const queryClient = new QueryClient();
