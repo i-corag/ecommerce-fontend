@@ -12,7 +12,7 @@ const Header = () => {
 
     const { data: loggedUser = [] } = useGetLoggedUser();
 
-    const isLogged = (loggedUser.loggedIn) ? loggedUser.user.role : undefined
+    const isLogged = (loggedUser.loggedIn) ? loggedUser.user?.role : undefined
     const isAdmin = !isLogged ? false : isLogged
 
     return (
